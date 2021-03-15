@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "bootstrap/dist/css/bootstrap.css";
+import PageSearchResult from "./page-search-result.js";
+import PageHome from "./page-home.js";
+import PageArtist from "./page-artist.js";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Layout from "./components/layout.js";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <BrowserRouter>
+        <Layout>
+          <Switch>
+            {/* Aca definimos el path que nos ruteara y el componente a renderear */}
+            <Route exact path="/busqueda" component={PageSearchResult}></Route>
+            <Route exact path="/artista" component={PageArtist}></Route>
+            <Route path="/" component={PageHome}></Route>
+          </Switch>
+        </Layout>
+      </BrowserRouter>
+    );
+  }
 }
 
 export default App;

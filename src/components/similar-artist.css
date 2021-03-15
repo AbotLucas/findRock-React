@@ -1,0 +1,12 @@
+.centrado{
+    height: auto;
+}
+
+.similarArtistCards .col-md-3 {
+    padding: 0;
+}
+
+.margenes {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}

@@ -1,0 +1,54 @@
+.logo-barra {
+    width: 50%;
+}
+
+.barra .col-md-2 {
+    text-align: center;
+    padding-right: 0;
+}
+
+.barra {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    border-bottom: 1px solid rgba(199, 183, 183, 0.5);
+}
+
+/* .btng {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#f1f1f1));
+    background-image: -webkit-linear-gradient(top, #f5f5f5, #f1f1f1);
+    -webkit-border-radius: 2px;
+    -webkit-user-select: none;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #5F6368;
+    cursor: pointer;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    min-width: 54px;
+    padding: 0 16px;
+    text-align: center;
+    height: 36px;
+    line-height: 27px;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 35px;
+
+}
+
+.btng:hover {
+    color: black;
+    text-decoration: none;
+}
+
+
+.actions {
+    text-align: center;
+    margin-top: 20px;
+
+} */
