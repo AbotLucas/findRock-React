@@ -6,7 +6,9 @@ function Footer() {
     <React.Fragment>
       <div className="row">
         <div className="col-md-12 centrar">
-          <p>Todos los derechos reservados 2021 @abotlucas</p>
+          <p className="footer__copyr">
+            Todos los derechos reservados 2021 @abotlucas
+          </p>
         </div>
       </div>
     </React.Fragment>

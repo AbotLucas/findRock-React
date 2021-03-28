@@ -7,12 +7,6 @@ class PageSearchResult extends React.Component {
   state = {
     busqueda: "",
   };
-  /*  componentWillMount() {
-    console.log("ComponentWillMount()", "Antes del metodo Rnder");
-  }
-  componentWillUnmount() {
-    console.log("ComponentWIllUNMount", "Me fui adio");
-  } */
 
   componentDidMount() {
     let search = this.props.history.location.search

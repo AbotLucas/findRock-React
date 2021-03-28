@@ -21,7 +21,7 @@ class SearchForm extends React.Component {
             onChange={this.props.onChange}
           />
         </div>
-        <Actions />
+        <Actions onClick={this.props.onClick} />
       </form>
     );
   }

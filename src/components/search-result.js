@@ -15,7 +15,7 @@ class SearchResult extends React.Component {
   };
   /* Cada vez que modifiquemos la busqueda, se modificara el state busqueda de page-search-result, que envia como prop.busqueda 
   a serach-results, por tanto cada vez que se actualice un prop nuevo, la busqueda cambiara. */
-  componentWillReceiveProps(e) {
+  UNSAFE_componentWillReceiveProps(e) {
     let terminoDeBusqueda = e.busqueda;
     this.fetchData(
       //`http://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&limit=40&artist=l&api_key=5a3a1efb4e152e738f60ced2e4290f87&format=json`
@@ -38,7 +38,7 @@ class SearchResult extends React.Component {
         });
       } else {
         data.similarartists.artist.map((artista, i) => {
-          fetch(
+          return fetch(
             `https://theaudiodb.com/api/v1/json/1/search.php?s=${artista.name}`
           ).then((respuestaAudioDb) => {
             respuestaAudioDb.json().then((respuestaParseada) => {

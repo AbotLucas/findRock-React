@@ -1,13 +1,15 @@
 import React from "react";
 
-function Actions() {
+function Actions(props) {
   return (
     <React.Fragment>
       <div className="actions">
         <button className="btng" type="submit">
           Search Similar Artist
         </button>
-        <button className="btng">Github Abot</button>
+        <button className="btng" onClick={props.onClick}>
+          By Abot Lucas
+        </button>
       </div>
     </React.Fragment>
   );
